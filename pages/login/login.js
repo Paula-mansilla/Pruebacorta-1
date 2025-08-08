@@ -40,6 +40,7 @@ export function login(){
     boton2.className = "boton2"
     boton2.textContent = "REGISTER"
     div.appendChild(boton2);
+    
 
     return div;
 }
