@@ -1,56 +1,102 @@
 export function bannerLogin(){
+    let div = document.createElement("div");
+    div.className = "fondo1";
+   
 
-    let div = document.createElement('div');
-    div.className = "bannerLogin ";
+    let fondo2 = document.createElement("div");
+    fondo2.className = "fondo2";
+    div.appendChild(fondo2);
+  
 
-    let flecha = document.createElement('a');
-    flecha.href = "../login/login.html";
-    flecha.className = "flecha"
-    flecha.textContent = "←"
-    div.appendChild(flecha);
+    let img2 = document.createElement("img");
+    img2.src = "../../assets/imagenes/Fashion.png";
+    img2.className = "img2";
+    div.appendChild(img2);
+    
+   
+    let h1 = document.createElement("h1");
+    h1.textContent = "Welcome Back!";
+    h1.className ="welcome";
+    div.appendChild(h1);
 
-    let span11 = document.createElement('span');
-    span11.className = "span11"
-    span11.textContent = "Welcome Back!"
-    div.appendChild(span11);
+    let textoP = document.createElement("p");
+    textoP.className = "textoP"
+    textoP.textContent = "Yay! You're back! Thanks for shopping with us.We have excited deals and promotions going on, grab your pick now! ";
+    div.appendChild(textoP);
 
-    let span22 = document.createElement('span');
-    span22.className = "span22"
-    span22.textContent = "Yay! You're back! Thanks for shopping with us.We have excited deals and promotions going on, grab your pick now! "
-    div.appendChild(span22);
+    
+    let tituloLogin = document.createElement("span");
+    tituloLogin.className ="log";
+    tituloLogin.textContent = "LOG IN";
+    div.appendChild(tituloLogin);
 
-    let span33 = document.createElement('span');
-    span33.className = "span33"
-    span33.textContent = "LOG IN"
-    div.appendChild(span33);
+    let emailTexto = document.createElement("span");
+    emailTexto.textContent = "Email address";
+    emailTexto.className ="emailT";
+    div.appendChild(emailTexto);
 
-    let span44 = document.createElement('span');
-    span44.className = "span44"
-    span44.textContent = "Email address"
-    div.appendChild(span44);
+    let emailInputDiv = document.createElement("div");
+    emailInputDiv.className = "emailCuadro1";
 
-    let div11 = document.createElement('div');
-    div11.className = "div11";
-    div.appendChild(div11)
+    let emailImg = document.createElement("img");
+    emailImg.src = "../../assets/imagenes/envio.png";
+    emailImg.className = "carta";
 
-    let span55 = document.createElement('span');
-    span55.className = "span55"
-    span55.textContent = "hlo@geeta.co|"
-    div.appendChild(span55);
+    let emailText = document.createElement("input");
+    emailText.type = "text";
+    emailText.placeholder = "Enter your email";
+    emailText.className = "emailText";
 
-    let div22 = document.createElement('div');
-    div22.className = "div22";
-    div.appendChild(div22)
-
-    let span66 = document.createElement('span');
-    span66.className = "span66"
-    span66.textContent = "Enter your password"
-    div.appendChild(span66);
-
-
-
+    emailInputDiv.appendChild(emailImg);
+    emailInputDiv.appendChild(emailText);
+    div.appendChild(emailInputDiv);
 
 
+    let passTexto = document.createElement("span");
+    passTexto.textContent = "Password";
+    passTexto.className = "pass";
+    div.appendChild(passTexto);
+
+    let passInputDiv = document.createElement("div");
+    passInputDiv.className = "passCuadro";
+
+    let passImg = document.createElement("img");
+    passImg.src = "../../assets/imagenes/candado.png"; 
+    passImg.alt = "password icon";
+
+    let passText = document.createElement("input");
+    passText.type = "password";
+    passText.placeholder = "Enter your password";
+
+    passInputDiv.appendChild(passImg);
+    passInputDiv.appendChild(passText);
+    div.appendChild(passInputDiv);
+
+ 
+   
+    let loginBtn = document.createElement("div");
+    loginBtn.className = "login-btn";
+    loginBtn.textContent = "LOG IN";
+    div.appendChild(loginBtn);
+
+    
+    let text2 = document.createElement("span");
+    text2.className = "contenedor-text2";
+
+    let registerSpan = document.createElement("span");
+    registerSpan.textContent = "Not registered yet?  ";
+    
+
+    let Account = document.createElement("span");
+    Account.textContent = "   Create an Account";
+    Account.className = "Account";
+
+    text2.appendChild(registerSpan);
+    text2.appendChild(Account);
+
+    div.appendChild(text2);
+
+   
 
 
     return div;
