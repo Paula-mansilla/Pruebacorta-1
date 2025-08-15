@@ -102,4 +102,3 @@ export function bannerLogin(){
     return div;
 }
 
-document.body.appendChild(bannerLogin());
